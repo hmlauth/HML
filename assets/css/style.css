@@ -1,0 +1,139 @@
+
+body {
+  background-color: black;
+}
+
+/* Nav Bar */
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+}
+
+.nav-wrapper {
+  background-color: black;
+  text-align: right;
+  margin-left: 10px;
+}
+
+.navigation {
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.nav-items{
+  padding: 5px;
+}
+
+#nav-span {
+  color: rgb(255, 102, 128);
+}
+
+.nav-items, #footer-copyright {
+  color: rgb(142, 142, 142);
+}
+
+  .nav-items > a:hover {
+    color: yellow;
+  }
+
+  .nav-items > a:active {
+    color: rgb(0, 145, 255);
+  }
+
+
+/* Body */
+h1, h2, h5 {
+  font-family: 'Rock Salt', cursive;
+  letter-spacing: 5px;
+}
+
+h1 {
+  color: white;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+.portfolio-card {
+  width: 100px;
+}
+
+.card-content {
+ 
+}
+
+#ingredient-validation, #cuisine-validation {
+  color: rgb(250, 74, 103);
+  font-style: italic;
+}
+
+.parallax-container {
+  min-height: 600px;
+}
+
+.parallax-image {
+  transform: translate3d(-50%, 734.42px, 0px);
+}
+
+.portfolio-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.portfolio-header {
+  text-align: center;
+}
+
+#portfolio-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 50%;
+}
+
+.portfolio-card {
+  width: 100%;
+  margin: 10px;
+}
+
+/* FOOTER*/
+.page-footer {
+  background-color: black;
+}
+
+footer {
+  color: white;
+  padding: 7px 0px 7px 0px;
+  text-align: center;
+  font-size: small;
+  margin-top: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.footer-message {
+  text-align: left;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#profile-photo {
+  border-radius: 50%;
+  height: 115px;
+  float: left;
+  margin-right: 25px;
+}
+
+
+
