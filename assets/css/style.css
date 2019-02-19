@@ -1,9 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: black;
 }
 
-/* Nav Bar */
+/* NAV BAR */
 #nav-bar {
   display: flex;
   justify-content: space-between;
@@ -33,40 +36,20 @@ body {
   color: rgb(142, 142, 142);
 }
 
-  .nav-items > a:hover {
-    color: yellow;
-  }
+  a:hover {
+      color: yellow;
+    }
 
-  .nav-items > a:active {
-    color: rgb(0, 145, 255);
-  }
+  a:active {
+      color: rgb(255, 102, 128);
+    }
 
 
-/* Body */
-h1, h2, h5 {
+/* BODY CONTENT */
+h1, h2 {
   font-family: 'Rock Salt', cursive;
   letter-spacing: 5px;
-}
-
-h1 {
   color: white;
-}
-
-h5 {
-  font-size: 20px;
-}
-
-.portfolio-card {
-  width: 100px;
-}
-
-.card-content {
- 
-}
-
-#ingredient-validation, #cuisine-validation {
-  color: rgb(250, 74, 103);
-  font-style: italic;
 }
 
 .parallax-container {
@@ -77,27 +60,72 @@ h5 {
   transform: translate3d(-50%, 734.42px, 0px);
 }
 
+/* PORTFOLIO SECTION */
 .portfolio-container {
   margin: 0 auto;
   width: 90%;
 }
 
 .portfolio-header {
-  text-align: center;
+  float: right;
+  top: -60px;
+  position: relative;
 }
 
 #portfolio-body {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  text-align: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.portfolio-img {
   width: 50%;
+  margin: inherit;
+}
+
+/* PORTFOLIO BODY TRIAL 1 */
+/* #portfolio-body {
+  text-align: center;
+  display: inline-grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: 50% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  overflow: hidden;
 }
 
 .portfolio-card {
   width: 100%;
   margin: 10px;
+} */
+
+/* SKILLS SECTION */
+
+.skills-header {
+  float: left;
+  top: -70px;
+  position: relative;
+}
+
+.skills-body {
+  clear: left;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.devicon-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.devicon {
+  font-size: 100px;
+  padding: 50px;
 }
 
 /* FOOTER*/
@@ -134,6 +162,3 @@ footer {
   float: left;
   margin-right: 25px;
 }
-
-
-
