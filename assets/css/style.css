@@ -52,6 +52,10 @@ h1, h2 {
   color: white;
 }
 
+h5 {
+  color: yellow;
+}
+
 .parallax-container {
   min-height: 600px;
 }
@@ -68,36 +72,28 @@ h1, h2 {
 
 .portfolio-header {
   float: right;
-  top: -60px;
+  top: 20px;
   position: relative;
 }
 
-#portfolio-body {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-}
-
 .portfolio-img {
-  width: 50%;
+  width: 70%;
   margin: inherit;
+  object-fit: contain;
 }
 
-/* PORTFOLIO BODY TRIAL 1 */
-/* #portfolio-body {
+#portfolio-body {
   text-align: center;
+  margin: 20px auto;
   display: inline-grid;
   grid-template-columns: 50% auto;
   grid-template-rows: 50% auto;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  overflow: hidden;
+  grid-column-gap: 30px;
+  grid-row-gap: 40px;
+  justify-items: center;
+  align-items: center;
 }
 
-.portfolio-card {
-  width: 100%;
-  margin: 10px;
-} */
 
 /* SKILLS SECTION */
 
@@ -143,7 +139,8 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 99999;
+  display: none;
 }
 
 .footer-message {
@@ -161,4 +158,8 @@ footer {
   height: 115px;
   float: left;
   margin-right: 25px;
+}
+
+.show, .page-footer:hover {
+  display: block;
 }
