@@ -1,7 +1,6 @@
 $(document).ready(function () {
   // Materialize initialization for parallax
   $('.parallax').parallax();
-
 });
 
 // Footer effect
@@ -26,3 +25,13 @@ $(window).scroll(function (event) {
   }
   footer();
 });
+
+// Nav Bar Contact
+$("#nav-contact").on("click", function() {
+  var contact = $("#contact-icon");
+  contact.attr("class", "btn-floating cyan pulse");
+})
+
+$("#contact-icon").on("click", function() {
+  $("#contact-icon").removeAttr("class","btn-floating cyan pulse");
+})
