@@ -7,6 +7,7 @@ body {
 }
 
 /* NAV BAR */
+
 #nav-bar {
   display: flex;
   justify-content: space-between;
@@ -15,7 +16,6 @@ body {
 
 .nav-wrapper {
   background-color: black;
-  text-align: right;
   margin-left: 10px;
 }
 
@@ -46,14 +46,11 @@ body {
 
 
 /* BODY CONTENT */
+
 h1, h2 {
   font-family: 'Rock Salt', cursive;
   letter-spacing: 5px;
   color: white;
-}
-
-h5 {
-  color: yellow;
 }
 
 .parallax-container {
@@ -65,6 +62,7 @@ h5 {
 }
 
 /* PORTFOLIO SECTION */
+
 .portfolio-container {
   margin: 0 auto;
   width: 90%;
@@ -97,6 +95,9 @@ h5 {
   grid-row-gap: 40px;
   justify-items: stretch;
   align-items: stretch;
+  grid-template-areas:
+    'psychic-game friends-trivia'
+    'gifTastic ingrediFeed';
 }
 
 
@@ -129,7 +130,7 @@ h5 {
   padding: 50px;
 }
 
-/* FOOTER*/
+/* FOOTER */
 .page-footer {
   background-color: black;
 }
@@ -167,3 +168,27 @@ footer {
 .show, .page-footer:hover {
   display: block;
 }
+
+/* <<<<<<<<<< MEDIA QUERIES >>>>>>>>>>> */
+
+@media only screen and 
+  /* For mobile phones */
+  (max-width: 768px) {
+
+      #nav-bar {
+        display: inline-block;
+        text-align: center;
+      };
+
+      #portfolio-body {
+        background-color: red;
+        display: inline-block;
+        flex-wrap: wrap;
+      };
+
+      .devicon {
+        font-size: 50px;
+        padding: 30px;
+      };
+
+  };
