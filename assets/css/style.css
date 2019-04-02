@@ -77,29 +77,31 @@ h1, h2 {
 
 #portfolioGrid-cell {
   border: 1px solid white;
+  height: 25em;
 }
 
 .portfolio-img {
   width: 70%;
   margin: inherit;
   object-fit: contain;
+  height: 25em;
 }
 
 #portfolio-body {
   text-align: center;
   margin: 20px auto;
   display: inline-grid;
-  grid-template-columns: 50% auto;
-  grid-template-rows: 50% auto;
+  /* grid-template-columns: 50% auto; */
+  /* grid-template-rows: 50% auto; */
   grid-column-gap: 30px;
   grid-row-gap: 40px;
-  justify-items: stretch;
-  align-items: stretch;
+  /* justify-items: stretch;
+  align-items: stretch; */
   grid-template-areas:
     'psychic-game friends-trivia'
-    'gifTastic ingrediFeed';
+    'gifTastic ingrediFeed'
+    'liribot underwarter-word';
 }
-
 
 /* SKILLS SECTION */
 
