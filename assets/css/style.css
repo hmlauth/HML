@@ -81,7 +81,7 @@ h1, h2 {
 }
 
 .portfolio-img {
-  width: 70%;
+  width: 90%;
   margin: inherit;
   object-fit: contain;
   height: 25em;
@@ -101,6 +101,10 @@ h1, h2 {
     'psychic-game friends-trivia'
     'gifTastic ingrediFeed'
     'liribot underwarter-word';
+}
+
+#underwater-world {
+  width: 80%;
 }
 
 /* SKILLS SECTION */
@@ -129,7 +133,7 @@ h1, h2 {
 
 .devicon {
   font-size: 100px;
-  padding: 50px;
+  padding: 20px;
 }
 
 /* FOOTER */
