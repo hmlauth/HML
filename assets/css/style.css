@@ -72,9 +72,7 @@ h1, h2 {
 }
 
 .portfolio-header {
-  float: right;
-  top: 20px;
-  position: relative;
+    text-align: right;
 }
 
 /* #portfolioGrid-cell {
@@ -84,7 +82,6 @@ h1, h2 {
 
 .portfolio-img {
   width: 90%;
-  margin: inherit;
   object-fit: contain;
   height: 24em;
 }
@@ -162,20 +159,10 @@ ul {
 }
 
 #portfolio-body {
-  text-align: center;
-  margin: 20px auto;
-  display: inline-grid;
-  /* grid-template-columns: 50% auto; */
-  /* grid-template-rows: 50% auto; */
-  grid-column-gap: 30px;
-  grid-row-gap: 40px;
-  /* justify-items: stretch;
-  align-items: stretch; */
-  grid-template-areas:
-    'ingrediFeed yumme'
-    'psychic-game crystal-collector'
-    'gifTastic liribot'
-    'word-guess train-scheduler';
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 3em 0 3em 0;
 }
 
 #underwater-world {
@@ -261,15 +248,15 @@ footer {
         text-align: center;
       };
 
-      #portfolio-body {
+      /* #portfolio-body {
         background-color: red;
         display: inline-block;
         flex-wrap: wrap;
-      };
+      }; */
 
-      .devicon {
+      /* .devicon {
         font-size: 50px;
         padding: 30px;
-      };
+      }; */
 
   };
