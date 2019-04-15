@@ -4,6 +4,8 @@
 
 body {
   background-color: black;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Raleway', sans-serif;
 }
 
 /* NAV BAR */
@@ -41,7 +43,7 @@ body {
     }
 
   a:active {
-      color: rgb(255, 102, 128);
+      color: #ff5350;
     }
 
 
@@ -75,16 +77,88 @@ h1, h2 {
   position: relative;
 }
 
-#portfolioGrid-cell {
+/* #portfolioGrid-cell {
   border: 1px solid white;
   height: 25em;
-}
+} */
 
 .portfolio-img {
   width: 90%;
   margin: inherit;
   object-fit: contain;
-  height: 25em;
+  height: 24em;
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+.img-container {
+  position: relative;
+  width: 90%;
+}
+
+#ingredifeed {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ff5350;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  border-radius: 25px;
+}
+
+.img-container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: black;
+  font-size: 1em;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+ul {
+  line-height: 1.6em
+}
+
+.the {
+  color: #a71709;
+  font-weight: bolder;
+  font-size: 1.3em;
+
+}
+
+.the-text {
+  font-size: 1em;
+}
+
+.text ul li a {
+  color: black;
+}
+
+.text ul li a:hover {
+  color: yellow;
 }
 
 #portfolio-body {
@@ -98,9 +172,10 @@ h1, h2 {
   /* justify-items: stretch;
   align-items: stretch; */
   grid-template-areas:
-    'psychic-game friends-trivia'
-    'gifTastic ingrediFeed'
-    'liribot underwarter-word';
+    'ingrediFeed yumme'
+    'psychic-game crystal-collector'
+    'gifTastic liribot'
+    'word-guess train-scheduler';
 }
 
 #underwater-world {
